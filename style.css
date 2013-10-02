@@ -1,0 +1,559 @@
+/*
+Theme Name: My Theme
+Theme URI: http://example.com/example/
+Description: A search engine optimized website framework for WordPress.
+Author: David Clarke
+Author URI: http://davidpclarke.com/
+Version: 1.0
+Tags: clean, white, responsive
+.
+Your theme can be your copyrighted work.
+Like WordPress, this work is released under GNU General Public License, version 2 (GPL).
+ 
+http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ 
+.
+*/
+
+/* =============================================================================
+   HTML5 Boilerplate CSS: h5bp.com/css
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html, button, input, select, textarea { font-family: sans-serif; color: #666; } /* davidpclarke: Changed colour */
+body { margin: 0; font-size: 0.85em; line-height: 1.4; }
+
+::-moz-selection { background: #25AAE1; color: #fff; text-shadow: none; } /* davidpclarke: Changed background */
+::selection { background: #25AAE1; color: #fff; text-shadow: none; }
+
+a { color: #25AAE1; text-decoration: none;} /* davidpclarke: Changed colour and underline behaviour */;
+a:visited { color: #25AAE1; }
+a:hover { color: #25AAE1; text-decoration: underline;}
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 75%; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+svg:not(:root) { overflow: hidden; }
+
+figure { margin: 0; }
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+button[disabled], input[disabled] { cursor: default; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+/* ===== Primary Styles ========================================================
+   Author: David Clarke
+   ========================================================================== */
+
+#container {
+  margin-left: auto;
+  margin-right: auto; /* Center the main container */
+  width: 960px;
+  /* Removed percentages when moving from scaling to break points (for image device backgrounds)
+  padding-left: 2%;
+  padding-right: 2%;
+  max-width: 96%; */
+}
+
+#home-container {
+  margin-left: auto;
+  margin-right: auto; /* Center the main container */
+  width: 960px;
+}
+
+#header {
+  width: 100%; /* Full width of the container */
+  overflow: hidden; /* Only content (header) is floated, so this is required to give the div some height */
+}
+
+#blog-title {
+  font-family: 'Raleway', cursive;
+  font-size: 40px;
+  font-weight: bold;
+  color: #bbb;
+  float: right;
+  margin: 0px;
+  border-bottom: 5px solid #25AAE1;
+}
+
+#blog-title a {
+	color: #bbb;
+	text-decoration: none;
+}
+
+#blog-title a:visited {
+	color: #bbb;
+}
+
+#blog-title a:hover {
+	color: #25AAE1;
+}
+
+.entry-title {
+	font-family: 'Raleway', cursive;
+	font-size: 30px;
+	font-weight: bold;
+	color: #bbb;	
+	line-height: 1.0em;
+	margin: 0px;
+	margin-top: 40px;
+	border-bottom: 5px solid #25AAE1;
+}
+
+.entry-title a {
+	color: #bbb;
+	text-decoration: none;
+}
+
+.entry-title a:visited {
+	color: #bbb;
+}
+
+.entry-title a:hover {
+	color: #25AAE1;
+}
+
+/* Container for homepage posts */
+.grid-post {
+  width: 235px;
+  float: left;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+/* Container for individual homepage images */
+.block {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+/* Container for content to display on mouseover of .block. Starting position is below .block (top: 100%) */
+.hover_info {
+  position: absolute;
+  top: 100%;
+  background-color: rgba( 0, 0, 0, 0.3 );
+  width: 100%;
+  height: 100%;
+}
+
+/* Link in .hover_info. Starts out of view (left: -100%) */
+.hover_info a {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: normal;
+
+  position: absolute;
+  background-color: rgba( 37, 170, 225, 0.75 );
+  padding: 5px;
+  left: -100%;
+}
+
+/* Mouseover state of link */
+.hover_info a:hover {
+  background-color: rgba( 37, 170, 225, 1.0 );
+  text-decoration: none;
+}
+
+/* On mouseover .block, transition .hover_info into view */
+.block:hover .hover_info {
+  top: 0;
+  left: 0;
+  transition: 200ms;
+}
+
+
+.block:hover .hover_info a {
+  left: 0;
+  transition-delay: 400ms;
+  transition: 200ms;
+}
+
+p {
+	margin-top: 0px; /* First paragraph (photo) should be flush with the bottom border of the title */
+}
+
+#nav-below {
+  margin-top: 20px;
+  position: relative;
+}
+
+.nav-previous {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+}
+
+.nav-next {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  text-align: right;
+}
+
+/* Responsive images */
+.entry-content img,
+.post img,
+.comment-content img,
+.widget img {
+	max-width: 100%; /* Fluid images for posts on homepage, posts on post page, comments, and widgets */
+}
+img[class*="align"],
+img[class*="wp-image-"] {
+	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+img.size-full {
+/* Not sure why this was set to 97.5%. 
+Was causing 960px images to only display smaller than width of the container
+max-width: 97.5%; */
+  max-width: 100%;
+	width: auto; /* Prevent stretching of full-size images with height and width attributes in IE8 */
+}
+
+/**** Transitions ****/
+
+/*.masonry,
+.masonry .masonry-brick {
+  -webkit-transition-duration: 0.4s;
+     -moz-transition-duration: 0.4s;
+      -ms-transition-duration: 0.4s;
+       -o-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.masonry {
+  -webkit-transition-property: width, height;
+     -moz-transition-property: width, height;
+      -ms-transition-property: width, height;
+       -o-transition-property: width, height;
+          transition-property: width, height;
+}
+
+.masonry .masonry-brick {
+  -webkit-transition-property: left, right, top;
+     -moz-transition-property: left, right, top;
+      -ms-transition-property: left, right, top;
+       -o-transition-property: left, right, top;
+          transition-property: left, right, top;
+}*/
+
+/* Infinite scrolling plugin creates div infscr-loading for loading message and graphic.
+   This inherits the masonary individual item style, so leaves a space in the grid of images.
+   Eexecuting masonary JS function fixes the issue, so we could look to execute this when the style of the div changes to hidden.
+   Hide for now.
+*/
+#infscr-loading {
+  display: none !important;
+}
+
+footer {
+  color: #bbb;
+  text-align: center;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Set device chrome to go around screen grabs as CSS backgrounds */
+.border-macbook {
+  background: url("/wp-content/themes/my-theme/images/device-border-macbook-960.png") no-repeat scroll left top transparent;
+  overflow: hidden;
+  padding: 56px 142px 90px 142px;
+  width: 676px; /* Left and right padding of 142px makes total width of 960px */
+  height: 422px;
+}
+
+.border-ipad-mini {
+  background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-960.png") no-repeat scroll left top transparent;
+  overflow: hidden;
+  padding: 118px 211px 118px 221px;
+  width: 528px;
+  height: 704px;
+}
+
+.border-iphone5 {
+  background: url("/wp-content/themes/my-theme/images/device-border-iphone5-960.png") no-repeat scroll left top transparent;
+  overflow: hidden;
+  padding: 116px 365px 100px 365px;
+  width: 230px;
+  height: 409px;
+}
+
+.bg-red { background-color: #cc3333; }
+.bg-orange { background-color: #ff6600; }
+.bg-green { background-color: #339933; }
+.bg-dark-blue { background-color: #333399; }
+.bg-purple { background-color: #663366; }
+.bg-blue { background-color: #25AAE1; }
+.bg-yellow { background-color: #ffcc00; }
+.bg-lime { background-color: #99ff00; }
+.bg-aqua { background-color: #00ffcc; }
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 480px) {
+	/* Style adjustments for viewports that meet the condition */
+  nav {
+    margin-left: auto; /* Center nav */
+    margin-right: auto;
+
+    position: relative; /* Reset absolute positioning */
+    top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    margin-top: 10px;
+    max-width: 270px; /* Ensures 2 rows of 3 where 4 and 2 would fit */
+  }
+
+  nav img {
+    padding: 15px; /* Spacing between buttons */
+  }
+}
+
+
+@media only screen and (max-width: 980px) {
+  /* Shrink the homepage container so that the header is always right aligned with the content */
+  #home-container {
+    width: 720px;
+  }
+
+  #container {
+    width: 740px;
+  }
+
+  .border-macbook {
+    background: url("/wp-content/themes/my-theme/images/device-border-macbook-740.png") no-repeat scroll left top transparent;
+    overflow: hidden;
+    padding: 44px 109px 65px 109px;
+    width: 522px !important;
+    height: auto !important;
+  }
+
+  .border-ipad-mini {
+    background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-740.png") no-repeat scroll left top transparent;
+    overflow: hidden;
+    padding: 90px 163px 118px 170px;
+    width: 407px !important;
+    height: auto !important;
+  }
+
+  .border-iphone5 {
+    background: url("/wp-content/themes/my-theme/images/device-border-iphone5-740.png") no-repeat scroll left top transparent;
+    overflow: hidden;
+    padding: 88px 281px 80px 281px;
+    width: 178px !important;
+    height: auto !important;
+  }
+
+  .bg-red { background-color: #cc3333; }
+  .bg-orange { background-color: #ff6600; }
+  .bg-green { background-color: #339933; }
+  .bg-dark-blue { background-color: #333399; }
+  .bg-purple { background-color: #663366; }
+  .bg-blue { background-color: #25AAE1; }
+  .bg-yellow { background-color: #ffcc00; }
+  .bg-lime { background-color: #99ff00; }
+  .bg-aqua { background-color: #00ffcc; }
+}
+
+@media only screen and (max-width: 760px) {
+  #home-container {
+    width: 480px;
+  }
+
+  #container {
+    width: 580px;
+  }
+
+  .border-macbook {
+    background: url("/wp-content/themes/my-theme/images/device-border-macbook-580.png") no-repeat scroll left top transparent;
+    overflow: hidden;
+    padding: 33px 86px 50px 86px;
+    width: 408px !important;
+    height: auto !important;
+  }
+
+  .border-ipad-mini {
+    background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-580.png") no-repeat scroll left top transparent;
+    overflow: hidden;
+    padding: 71px 127px 75px 133px;
+    width: 320px !important;
+    height: auto !important;
+  }
+
+  .border-iphone5 {
+    background: url("/wp-content/themes/my-theme/images/device-border-iphone5-580.png") no-repeat scroll left top transparent;
+    overflow: hidden;
+    padding: 70px 220px 66px 221px;
+    width: 139px !important;
+    height: auto !important;
+  }
+
+  .bg-red { background-color: #cc3333; }
+  .bg-orange { background-color: #ff6600; }
+  .bg-green { background-color: #339933; }
+  .bg-dark-blue { background-color: #333399; }
+  .bg-purple { background-color: #663366; }
+  .bg-blue { background-color: #25AAE1; }
+  .bg-yellow { background-color: #ffcc00; }
+  .bg-lime { background-color: #99ff00; }
+  .bg-aqua { background-color: #00ffcc; }
+}
+
+@media only screen and (max-width: 580px) {
+  #container {
+    width: 320px;
+  }
+
+  .border-macbook {
+    background: url("/wp-content/themes/my-theme/images/device-border-macbook-320.png") no-repeat scroll left top transparent;
+    overflow: hidden;
+    padding: 18px 48px 30px 48px;
+    width: 224px !important;
+    height: auto !important;
+  }
+
+  .border-ipad-mini {
+    background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-320.png") no-repeat scroll left top transparent;
+    overflow: hidden;
+    padding: 52px 41px 60px 43px;
+    width: 236px !important;
+    height: auto !important;
+  }
+
+  .border-iphone5 {
+    background: url("/wp-content/themes/my-theme/images/device-border-iphone5-320.png") no-repeat scroll left top transparent;
+    overflow: hidden;
+    padding: 71px 89px 66px 90px;
+    width: 142px !important;
+    height: auto !important;
+  }
+
+  .bg-red { background-color: #cc3333; }
+  .bg-orange { background-color: #ff6600; }
+  .bg-green { background-color: #339933; }
+  .bg-dark-blue { background-color: #333399; }
+  .bg-purple { background-color: #663366; }
+  .bg-blue { background-color: #25AAE1; }
+  .bg-yellow { background-color: #ffcc00; }
+  .bg-lime { background-color: #99ff00; }
+  .bg-aqua { background-color: #00ffcc; }
+
+  #blog-title {
+    font-size: 25px;
+    color: #bbb;
+    float: right;
+    margin: 0px;
+    border-bottom: 5px solid #25AAE1;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #home-container {
+    width: 240px;
+  }
+
+  /* Styles to have 2 columns at mobile view */
+  #home-container {
+    width: 100%;
+  }
+
+  #header {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .grid-post {
+    max-width: 48%; 
+    margin: 0px;
+    padding: 0px 0px 5px 5px;
+  }
+
+  .grid-post img {
+    height: auto;
+  }
+}
+/* =============================================================================
+   Non-Semantic Helper Classes
+   ========================================================================== */
+
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+/* =============================================================================
+   Print Styles
+   ========================================================================== */
+ 
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
