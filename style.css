@@ -328,6 +328,19 @@ footer p {
   height: 409px;
 }
 
+.picture-frame-container-portrait {
+  padding: 30px 215px 30px 215px;
+}
+
+.border-picture-frame-portrait {
+  background-color: #fff;
+  padding: 40px;
+  border: solid 25px #222;
+  border-right-color:#181818;
+  border-bottom-color:#181818;
+  box-shadow:  0px 10px 20px #000
+}
+
 .bg-red { background-color: #cc3333; }
 .bg-orange { background-color: #ff6600; }
 .bg-green { background-color: #339933; }
@@ -397,15 +410,18 @@ footer p {
     height: auto !important;
   }
 
-  .bg-red { background-color: #cc3333; }
-  .bg-orange { background-color: #ff6600; }
-  .bg-green { background-color: #339933; }
-  .bg-dark-blue { background-color: #333399; }
-  .bg-purple { background-color: #663366; }
-  .bg-blue { background-color: #25AAE1; }
-  .bg-yellow { background-color: #ffcc00; }
-  .bg-lime { background-color: #99ff00; }
-  .bg-aqua { background-color: #00ffcc; }
+  .picture-frame-container-portrait {
+    padding: 30px 155px 30px 155px;
+  }
+
+  .border-picture-frame-portrait {
+    width: 300px !important;
+    height: auto !important;
+    /* No change below, but repeating in case I decide to customise later */
+    padding: 40px;
+    border: solid 25px #222;
+    box-shadow:  0px 10px 20px #000
+  }
 }
 
 @media only screen and (max-width: 760px) {
@@ -441,15 +457,17 @@ footer p {
     height: auto !important;
   }
 
-  .bg-red { background-color: #cc3333; }
-  .bg-orange { background-color: #ff6600; }
-  .bg-green { background-color: #339933; }
-  .bg-dark-blue { background-color: #333399; }
-  .bg-purple { background-color: #663366; }
-  .bg-blue { background-color: #25AAE1; }
-  .bg-yellow { background-color: #ffcc00; }
-  .bg-lime { background-color: #99ff00; }
-  .bg-aqua { background-color: #00ffcc; }
+  .picture-frame-container-portrait {
+    padding: 20px 130px 25px 130px;
+  }
+
+  .border-picture-frame-portrait {
+    width: 220px !important;
+    height: auto !important;
+    padding: 25px;
+    border: solid 25px #222;
+    box-shadow:  0px 10px 20px #000
+  }
 }
 
 @media only screen and (max-width: 580px) {
@@ -481,15 +499,17 @@ footer p {
     height: auto !important;
   }
 
-  .bg-red { background-color: #cc3333; }
-  .bg-orange { background-color: #ff6600; }
-  .bg-green { background-color: #339933; }
-  .bg-dark-blue { background-color: #333399; }
-  .bg-purple { background-color: #663366; }
-  .bg-blue { background-color: #25AAE1; }
-  .bg-yellow { background-color: #ffcc00; }
-  .bg-lime { background-color: #99ff00; }
-  .bg-aqua { background-color: #00ffcc; }
+  .picture-frame-container-portrait {
+    padding: 20px 45px 25px 45px;
+  }
+
+  .border-picture-frame-portrait {
+    width: 160px !important;
+    height: auto !important;
+    padding: 20px;
+    border: solid 15px #222;
+    box-shadow:  0px 10px 20px #000
+  }
 
   #blog-title {
     font-size: 25px;
