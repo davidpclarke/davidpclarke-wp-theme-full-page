@@ -320,6 +320,14 @@ footer p {
   height: 704px;
 }
 
+.border-ipad-mini-landscape {
+  background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-landscape-960.png") no-repeat scroll left top transparent;
+  overflow: hidden;
+  padding: 73px 163px 60px 142px;
+  width: 655px;
+  height: 492px;
+}
+
 .border-iphone5 {
   background: url("/wp-content/themes/my-theme/images/device-border-iphone5-960.png") no-repeat scroll left top transparent;
   overflow: hidden;
@@ -402,6 +410,14 @@ footer p {
     height: auto !important;
   }
 
+  .border-ipad-mini-landscape {
+    background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-landscape-740.png") no-repeat scroll left top transparent;
+    overflow: hidden;
+    padding: 58px 126px 46px 110px;
+    width: 504px !important;
+    height: auto !important;
+  }
+
   .border-iphone5 {
     background: url("/wp-content/themes/my-theme/images/device-border-iphone5-740.png") no-repeat scroll left top transparent;
     overflow: hidden;
@@ -460,6 +476,14 @@ footer p {
     height: auto !important;
   }
 
+  .border-ipad-mini-landscape {
+    background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-landscape-580.png") no-repeat scroll left top transparent;
+    overflow: hidden;
+    padding: 45px 98px 36px 86px;
+    width: 396px !important;
+    height: auto !important;
+  }
+
   .border-iphone5 {
     background: url("/wp-content/themes/my-theme/images/device-border-iphone5-580.png") no-repeat scroll left top transparent;
     overflow: hidden;
@@ -510,6 +534,14 @@ footer p {
     overflow: hidden;
     padding: 52px 41px 60px 43px;
     width: 236px !important;
+    height: auto !important;
+  }
+
+  .border-ipad-mini-landscape {
+    background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-landscape-320.png") no-repeat scroll left top transparent;
+    overflow: hidden;
+    padding: 25px 55px 21px 48px;
+    width: 217px !important;
     height: auto !important;
   }
 
