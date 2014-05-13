@@ -79,6 +79,8 @@
     <meta name="msapplication-square70x70logo" content="/mstile-70x70.png" />
     <meta name="msapplication-square150x150logo" content="/mstile-150x150.png" />
     <meta name="msapplication-square310x310logo" content="/mstile-310x310.png" />
+    <!-- Added this, as icon not working on various Android home screens -->
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png"/>
 </head>
 <body>
 <div id="wrapper" class="hfeed"> <?php //"hfeed" class tells bots that site publishes syndicated content like blog posts ?>
