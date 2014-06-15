@@ -38,10 +38,8 @@
 
 	<meta name="viewport" content="width=device-width">
 
-	<!-- Google font for blog title and headings --
-	<link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'> -->
+	<!-- Google font for blog title and headings -->
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200' rel='stylesheet' type='text/css'>
-
 
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 
@@ -91,16 +89,5 @@
     <?php } else { ?>
         <div id="container" role="main">
     <?php } ?>
-		<div id="header">
-			<header>
-				<?php
-				// Set blog name as the H1 for the homepage
-				if ( is_home() || is_front_page() ) { 
-				?>
-					<h1 id="blog-title"><a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a>
-				<?php } else { ?>
-					<div id="blog-title"><a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a>
-					</div>
-				<?php } ?>
-			</header>
-		</div>
+
+<!-- ************************** END OF HEADER ************************** -->

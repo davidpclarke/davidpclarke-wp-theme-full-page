@@ -1,5 +1,5 @@
 /*
-Theme Name: My Theme
+Theme Name: My Theme (Full Browser)
 Theme URI: http://example.com/example/
 Description: A search engine optimized website framework for WordPress.
 Author: David Clarke
@@ -99,16 +99,29 @@ td { vertical-align: top; }
   max-width: 96%; */
 }
 
-#home-container {
-  margin-left: auto;
-  margin-right: auto; /* Center the main container */
-  width: 960px;
+#container {
+  margin: 0 auto;
 }
 
-#header {
-  width: 100%; /* Full width of the container */
-  overflow: hidden; /* Only content (header) is floated, so this is required to give the div some height */
+#home-container {
+/*
+  margin-left: auto;
+  margin-right: auto; /* Center the main container */
+/*  width: 960px; */
+  width: 100%;
 }
+
+#content {
+  margin: 0 auto;
+}
+
+/*
+#header {
+  width: 100%; /* Full width of the container *
+  overflow: hidden; /* Only content (header) is floated, so this is required to give the div some height *
+}
+*/
+
 
 #blog-title {
   font-family: 'Raleway', cursive;
@@ -157,11 +170,17 @@ td { vertical-align: top; }
 	color: #25AAE1;
 }
 
+/* Container for homepage header */
+.grid-post.header {
+  width: 100%;
+  float: left;
+  margin-bottom: 0px;
+}
+
 /* Container for homepage posts */
 .grid-post {
   width: 235px;
   float: left;
-  margin-left: 5px;
   margin-bottom: 5px;
 }
 
@@ -385,10 +404,10 @@ footer p {
 
 
 @media only screen and (max-width: 980px) {
-  /* Shrink the homepage container so that the header is always right aligned with the content */
+  /* Shrink the homepage container so that the header is always right aligned with the content 
   #home-container {
     width: 720px;
-  }
+  }*/
 
   #container {
     width: 740px;
@@ -452,9 +471,9 @@ footer p {
 }
 
 @media only screen and (max-width: 760px) {
-  #home-container {
+/*  #home-container {
     width: 480px;
-  }
+  }*/
 
   #container {
     width: 580px;
@@ -586,20 +605,21 @@ footer p {
 }
 
 @media only screen and (max-width: 500px) {
-  #home-container {
+/*  #home-container {
     width: 240px;
-  }
+  }*/
 
   /* Styles to have 2 columns at mobile view */
-  #home-container {
+/*  #home-container {
     width: 100%;
-  }
+  }*/
 
+/*
   #header {
     width: 100%;
     margin-bottom: 5px;
   }
-
+*/
   .grid-post {
     max-width: 48%; 
     margin: 0px;

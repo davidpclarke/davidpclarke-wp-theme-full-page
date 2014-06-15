@@ -1,6 +1,39 @@
 		<?php get_header(); ?>
 
-        <div id="content">
+<!--        <div id="content"> -->
+
+<div id="content" class="js-masonry" data-masonry-options='{ "columnWidth": 235, "itemSelector": ".grid-post", "gutter": 5, "isFitWidth": true }'>
+
+            <!-- Moved header inside container to inherit width set by Masonry
+            <div id="header">
+                <header>
+                    <?php
+                    // Set blog name as the H1 for the homepage (the article title will be the H1 for other pages)
+                    if ( is_home() || is_front_page() ) { 
+                    ?>
+                        <h1 id="blog-title"><a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a>
+                    <?php } else { ?>
+                        <div id="blog-title"><a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a>
+                        </div>
+                    <?php } ?>
+                </header>
+            </div>
+            -->
+
+<div id="header" class="grid-post header">
+    <header>
+        <?php
+        // Set blog name as the H1 for the homepage (the article title will be the H1 for other pages)
+        if ( is_home() || is_front_page() ) { 
+        ?>
+            <h1 id="blog-title"><a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a>
+        <?php } else { ?>
+            <div id="blog-title"><a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a>
+            </div>
+        <?php } ?>
+    </header>
+</div>
+
 			<?php 
             // Counter used for logic to customise first post
             $i = 0;
@@ -55,8 +88,11 @@
             </div><!-- #nav-below -->
         <?php } ?>
 
-        <!-- Vanilla Masonary fills gaps left by float in 'content' div -->
+        <!-- Vanilla Masonary fills gaps left by float in 'content' div --
         <script src="<?php echo site_url(); ?>/wp-includes/js/vanilla-masonry.js"></script>
         <script> window.onload = function() { var wall = new Masonry( document.getElementById( 'content' ) ); }; </script>
+        -->
+        <script src="<?php echo get_template_directory_uri(); ?>/js/masonry.pkgd.min.js"></script>
+
 
 		<?php get_footer(); ?>     

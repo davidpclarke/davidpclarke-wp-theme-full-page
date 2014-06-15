@@ -12,6 +12,7 @@
         </div><!-- #colophon -->
     </div><!-- #footer -->
 </div><!-- #wrapper -->
+
 <?php /*
 <script>
 	var _gaq=[['_setAccount','UA-3992899-3'],['_trackPageview']];
