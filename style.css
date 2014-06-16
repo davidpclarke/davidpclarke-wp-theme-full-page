@@ -345,6 +345,7 @@ footer p {
   background-position: center;
 /*  padding: 73px 163px 60px 142px;*/
   padding: 73px calc(50% - 317px) 60px calc(50% - 338px);
+  padding: 73px -webkit-calc(50% - 317px) 60px  -webkit-calc(50% - 338px);
   width: 655px;
   height: 492px;
 }
