@@ -351,9 +351,10 @@ footer p {
 }
 
 .border-iphone5 {
-  background: url("/wp-content/themes/my-theme/images/device-border-iphone5-960.png") no-repeat scroll left top transparent;
+  background: url("/wp-content/themes/my-theme/images/device-border-iphone5-960.png") no-repeat scroll center top transparent;
   overflow: hidden;
-  padding: 116px 365px 100px 365px;
+  padding: 116px calc(50% - 115px) 100px calc(50% - 115px);
+  padding: 116px -webkit-calc(50% - 115px) 100px -webkit-calc(50% - 115px);
   width: 230px;
   height: 409px;
 }
