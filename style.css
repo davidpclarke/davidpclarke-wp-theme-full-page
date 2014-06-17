@@ -324,10 +324,11 @@ footer p {
 
 /* Set device chrome to go around screen grabs as CSS backgrounds */
 .border-macbook {
-  background: url("/wp-content/themes/my-theme/images/device-border-macbook-960.png") no-repeat scroll left top transparent;
+  background: url("/wp-content/themes/my-theme/images/device-border-macbook-960.png") no-repeat scroll center top transparent;
   overflow: hidden;
-  padding: 56px 142px 90px 142px;
-  width: 676px; /* Left and right padding of 142px makes total width of 960px */
+  padding: 56px calc(50% - 338px) 90px calc(50% - 338px);
+  padding: 56px -webkit-calc(50% - 338px) 90px -webkit-calc(50% - 338px);
+  width: 676px;
   height: 422px;
 }
 
@@ -340,10 +341,8 @@ footer p {
 }
 
 .border-ipad-mini-landscape {
-  background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-landscape-960.png") no-repeat scroll left top transparent;
+  background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-landscape-960.png") no-repeat scroll center top transparent;
   overflow: hidden;
-  background-position: center;
-/*  padding: 73px 163px 60px 142px;*/
   padding: 73px calc(50% - 317px) 60px calc(50% - 338px);
   padding: 73px -webkit-calc(50% - 317px) 60px  -webkit-calc(50% - 338px);
   width: 655px;
@@ -358,12 +357,14 @@ footer p {
   height: 409px;
 }
 
+/* Image is 400px wide + 40px of padding and 25px of border on each side */
 .picture-frame-container-portrait {
-  padding: 30px 215px 30px 215px;
+  padding: 30px calc(50% - 265px) 30px calc(50% - 265px);
+  padding: 30px -webkit-calc(50% - 265px) 30px -webkit-calc(50% - 265px);
 }
 
 .border-picture-frame-portrait {
-  background-color: #fff;
+  background-color: #FFFFD0;
   padding: 40px;
   border: solid 25px #222;
   border-right-color:#181818;
