@@ -333,9 +333,10 @@ footer p {
 }
 
 .border-ipad-mini {
-  background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-960.png") no-repeat scroll left top transparent;
+  background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-960.png") no-repeat scroll center top transparent;
   overflow: hidden;
-  padding: 118px 211px 118px 221px;
+  padding: 118px calc(50% - 264px) 118px calc(50% - 264px);
+  padding: 118px -webkit-calc(50% - 264px) 118px -webkit-calc(50% - 264px);
   width: 528px;
   height: 704px;
 }
