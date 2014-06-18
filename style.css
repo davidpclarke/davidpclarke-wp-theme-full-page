@@ -234,9 +234,16 @@ td { vertical-align: top; }
   transition: 200ms;
 }
 
+/* Offset paragraph to right of screen */
 p {
   margin-left: calc(50% - 138px);
   margin-right: calc(50% - 388px);
+}
+
+/* Remove this offset from <p> added to iframes */
+.rve-embed-container {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 #nav-below {
@@ -410,50 +417,46 @@ footer p {
 }
 
 
-@media only screen and (max-width: 980px) {
-  /* Shrink the homepage container so that the header is always right aligned with the content 
-  #home-container {
-    width: 720px;
-  }*/
-
-  #container {
-    width: 740px;
-  }
-
+@media only screen and (max-width: 900px) {
   .border-macbook {
-    background: url("/wp-content/themes/my-theme/images/device-border-macbook-740.png") no-repeat scroll left top transparent;
+    background: url("/wp-content/themes/my-theme/images/device-border-macbook-740.png") no-repeat scroll center top transparent;
     overflow: hidden;
-    padding: 44px 109px 65px 109px;
+    padding: 44px calc(50% - 261px) 65px calc(50% - 261px);
+    padding: 44px -webkit-calc(50% - 261px) 65px -webkit-calc(50% - 261px);
     width: 522px !important;
     height: auto !important;
   }
 
   .border-ipad-mini {
-    background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-740.png") no-repeat scroll left top transparent;
+    background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-740.png") no-repeat scroll center top transparent;
     overflow: hidden;
-    padding: 90px 163px 118px 170px;
+    padding: 90px calc(50% - 206px) 118px calc(50% - 201px);
+    padding: 90px -webkit-calc(50% - 206px) 118px -webkit-calc(50% - 201px);
     width: 407px !important;
     height: auto !important;
   }
 
   .border-ipad-mini-landscape {
-    background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-landscape-740.png") no-repeat scroll left top transparent;
+    background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-landscape-740.png") no-repeat scroll center top transparent;
     overflow: hidden;
     padding: 58px 126px 46px 110px;
+    padding: 58px calc(50% - 244px) 46px calc(50% - 260px);
+    padding: 58px -webkit-calc(50% - 244px) 46px -webkit-calc(50% - 260px);
     width: 504px !important;
     height: auto !important;
   }
 
   .border-iphone5 {
-    background: url("/wp-content/themes/my-theme/images/device-border-iphone5-740.png") no-repeat scroll left top transparent;
+    background: url("/wp-content/themes/my-theme/images/device-border-iphone5-740.png") no-repeat scroll center top transparent;
     overflow: hidden;
-    padding: 88px 281px 80px 281px;
+    padding: 88px calc(50% - 89px) 80px calc(50% - 89px);
+    padding: 88px -webkit-calc(50% - 89px) 80px -webkit-calc(50% - 89px);
     width: 178px !important;
     height: auto !important;
   }
 
   .picture-frame-container-portrait {
-    padding: 30px 155px 30px 155px;
+    padding: 30px calc(50% - 215px) 30px calc(50% - 215px);
   }
 
   .border-picture-frame-portrait {
@@ -477,49 +480,46 @@ footer p {
   .bg-aqua { background-color: #00ffcc; }
 }
 
-@media only screen and (max-width: 760px) {
-/*  #home-container {
-    width: 480px;
-  }*/
-
-  #container {
-    width: 580px;
-  }
-
+@media only screen and (max-width: 690px) {
   .border-macbook {
-    background: url("/wp-content/themes/my-theme/images/device-border-macbook-580.png") no-repeat scroll left top transparent;
+    background: url("/wp-content/themes/my-theme/images/device-border-macbook-580.png") no-repeat scroll center top transparent;
     overflow: hidden;
-    padding: 33px 86px 50px 86px;
+    padding: 33px calc(50% - 204px) 50px calc(50% - 204px);
+    padding: 33px -webkit-calc(50% - 204px) 50px -webkit-calc(50% - 204px);
     width: 408px !important;
     height: auto !important;
   }
 
   .border-ipad-mini {
-    background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-580.png") no-repeat scroll left top transparent;
+    background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-580.png") no-repeat scroll center top transparent;
     overflow: hidden;
-    padding: 71px 127px 75px 133px;
+    padding: 71px calc(50% - 163px) 75px calc(50% - 157px);
+    padding: 71px -webkit-calc(50% - 163px) 75px -webkit-calc(50% - 157px);
     width: 320px !important;
     height: auto !important;
   }
 
   .border-ipad-mini-landscape {
-    background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-landscape-580.png") no-repeat scroll left top transparent;
+    background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-landscape-580.png") no-repeat scroll center top transparent;
     overflow: hidden;
-    padding: 45px 98px 36px 86px;
+    padding: 45px calc(50% - 192px) 36px calc(50% - 204px);
+    padding: 45px -webkit-calc(50% - 192px) 36px -webkit-calc(50% - 204px);
     width: 396px !important;
     height: auto !important;
   }
 
   .border-iphone5 {
-    background: url("/wp-content/themes/my-theme/images/device-border-iphone5-580.png") no-repeat scroll left top transparent;
+    background: url("/wp-content/themes/my-theme/images/device-border-iphone5-580.png") no-repeat scroll center top transparent;
     overflow: hidden;
-    padding: 70px 220px 66px 221px;
+    padding: 70px calc(50% - 70px) 66px calc(50% - 69px);
+    padding: 70px -webkit-calc(50% - 70px) 66px -webkit-calc(50% - 69px);
     width: 139px !important;
     height: auto !important;
   }
 
   .picture-frame-container-portrait {
-    padding: 20px 130px 25px 130px;
+    padding: 20px calc(50% - 160px) 25px calc(50% - 160px);
+    padding: 20px -webkit-calc(50% - 160px) 25px -webkit-calc(50% - 160px);
   }
 
   .border-picture-frame-portrait {
@@ -542,45 +542,37 @@ footer p {
   .bg-aqua { background-color: #00ffcc; }
 }
 
-@media only screen and (max-width: 580px) {
-  #container {
-    width: 320px;
-  }
-
+@media only screen and (max-width: 540px) {
   .border-macbook {
-    background: url("/wp-content/themes/my-theme/images/device-border-macbook-320.png") no-repeat scroll left top transparent;
+    background: url("/wp-content/themes/my-theme/images/device-border-macbook-320.png") no-repeat scroll center top transparent;
     overflow: hidden;
-    padding: 18px 48px 30px 48px;
+    padding: 18px calc(50% - 112px) 30px calc(50% - 112px);
+    padding: 18px -webkit-calc(50% - 112px) 30px -webkit-calc(50% - 112px);
     width: 224px !important;
     height: auto !important;
   }
 
   .border-ipad-mini {
-    background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-320.png") no-repeat scroll left top transparent;
+    background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-320.png") no-repeat scroll center top transparent;
     overflow: hidden;
-    padding: 52px 41px 60px 43px;
+    padding: 52px calc(50% - 119px) 60px calc(50% - 117px);
+    padding: 52px -webkit-calc(50% - 119px) 60px -webkit-calc(50% - 117px);
     width: 236px !important;
     height: auto !important;
   }
 
   .border-ipad-mini-landscape {
-    background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-landscape-320.png") no-repeat scroll left top transparent;
+    background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-landscape-320.png") no-repeat scroll center top transparent;
     overflow: hidden;
-    padding: 25px 55px 21px 48px;
+    padding: 25px calc(50% - 105px) 21px calc(50% - 112px);
+    padding: 25px -webkit-calc(50% - 105px) 21px -webkit-calc(50% - 112px);
     width: 217px !important;
     height: auto !important;
   }
 
-  .border-iphone5 {
-    background: url("/wp-content/themes/my-theme/images/device-border-iphone5-320.png") no-repeat scroll left top transparent;
-    overflow: hidden;
-    padding: 71px 89px 66px 90px;
-    width: 142px !important;
-    height: auto !important;
-  }
-
   .picture-frame-container-portrait {
-    padding: 20px 45px 25px 45px;
+    padding: 20px calc(50% - 115px) 25px calc(50% - 115px);
+    padding: 20px -webkit-calc(50% - 115px) 25px -webkit-calc(50% - 115px);
   }
 
   .border-picture-frame-portrait {
