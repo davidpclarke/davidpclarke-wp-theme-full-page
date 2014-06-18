@@ -235,7 +235,8 @@ td { vertical-align: top; }
 }
 
 p {
-	margin-top: 0px; /* First paragraph (photo) should be flush with the bottom border of the title */
+  margin-left: calc(50% - 138px);
+  margin-right: calc(50% - 388px);
 }
 
 #nav-below {
@@ -626,6 +627,9 @@ footer p {
     margin-bottom: 5px;
   }
 */
+
+/* This section was used to have 2 columns on smaller screens. 
+   It doesn't work now Masonry has been updated to include the header
   .grid-post {
     max-width: 48%; 
     margin: 0px;
@@ -635,6 +639,7 @@ footer p {
   .grid-post img {
     height: auto;
   }
+  */
 }
 /* =============================================================================
    Non-Semantic Helper Classes

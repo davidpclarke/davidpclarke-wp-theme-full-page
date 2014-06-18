@@ -119,3 +119,14 @@ function tag_ur_it($glue) {
  * to the theme
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 add_theme_support( 'post-thumbnails' ); 
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DC: WP automatically adds P tags to content in posts. The p tag 
+ * on images causes P styles to be applied to images. However, we
+ * want padding on paragraphs but not images, so remove P from images
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+function filter_ptags_on_images($content){
+   return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
+}
+
+add_filter('the_content', 'filter_ptags_on_images');
