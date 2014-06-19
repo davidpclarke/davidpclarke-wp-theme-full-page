@@ -11,7 +11,7 @@
         <?php the_post(); ?>
 
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <h1 class="entry-title">&nbsp;.. / <?php the_title(); ?></h1>
+                <h1 class="entry-title"><a href="/">&nbsp;.. </a>/ <?php the_title(); ?></h1>
 
                 <?php the_content(); ?>
 

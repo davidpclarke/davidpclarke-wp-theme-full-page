@@ -237,7 +237,7 @@ td { vertical-align: top; }
 /* Offset paragraph to right of screen */
 p {
   margin-left: calc(50% - 138px);
-  margin-right: calc(50% - 388px);
+  margin-right: calc(50% - 338px);
 }
 
 /* Remove this offset from <p> added to iframes */
@@ -416,8 +416,13 @@ footer p {
   }
 }
 
-
 @media only screen and (max-width: 900px) {
+  /* Offset paragraph to right of screen */
+  p {
+    margin-left: calc(50% - 111px);
+    margin-right: calc(50% - 261px);
+  }
+
   .border-macbook {
     background: url("/wp-content/themes/my-theme/images/device-border-macbook-740.png") no-repeat scroll center top transparent;
     overflow: hidden;
@@ -481,6 +486,12 @@ footer p {
 }
 
 @media only screen and (max-width: 690px) {
+  /* Offset paragraph to right of screen */
+  p {
+    margin-left: calc(50% - 204px);
+    margin-right: calc(50% - 204px);
+  }
+
   .border-macbook {
     background: url("/wp-content/themes/my-theme/images/device-border-macbook-580.png") no-repeat scroll center top transparent;
     overflow: hidden;
@@ -543,6 +554,12 @@ footer p {
 }
 
 @media only screen and (max-width: 540px) {
+  /* Offset paragraph to right of screen */
+  p {
+    margin-left: calc(50% - 145px);
+    margin-right: calc(50% - 145px);
+  }
+
   .border-macbook {
     background: url("/wp-content/themes/my-theme/images/device-border-macbook-320.png") no-repeat scroll center top transparent;
     overflow: hidden;
