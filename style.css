@@ -242,8 +242,7 @@ p {
 
 /* Remove this offset from <p> added to iframes */
 .rve-embed-container {
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 0px;
 }
 
 #nav-below {
