@@ -331,7 +331,7 @@ footer p {
 
 /* Set device chrome to go around screen grabs as CSS backgrounds */
 .border-macbook {
-  background: url("/wp-content/themes/my-theme/images/device-border-macbook-960.png") no-repeat scroll center top transparent;
+  background: url("images/device-border-macbook-960.png") no-repeat scroll center top transparent;
   overflow: hidden;
   padding: 56px calc(50% - 338px) 90px calc(50% - 338px);
   padding: 56px -webkit-calc(50% - 338px) 90px -webkit-calc(50% - 338px);
@@ -340,7 +340,7 @@ footer p {
 }
 
 .border-ipad-mini {
-  background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-960.png") no-repeat scroll center top transparent;
+  background: url("images/device-border-ipad-mini-960.png") no-repeat scroll center top transparent;
   overflow: hidden;
   padding: 118px calc(50% - 264px) 118px calc(50% - 264px);
   padding: 118px -webkit-calc(50% - 264px) 118px -webkit-calc(50% - 264px);
@@ -349,7 +349,7 @@ footer p {
 }
 
 .border-ipad-mini-landscape {
-  background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-landscape-960.png") no-repeat scroll center top transparent;
+  background: url("images/device-border-ipad-mini-landscape-960.png") no-repeat scroll center top transparent;
   overflow: hidden;
   padding: 73px calc(50% - 317px) 60px calc(50% - 338px);
   padding: 73px -webkit-calc(50% - 317px) 60px  -webkit-calc(50% - 338px);
@@ -358,7 +358,7 @@ footer p {
 }
 
 .border-iphone5 {
-  background: url("/wp-content/themes/my-theme/images/device-border-iphone5-960.png") no-repeat scroll center top transparent;
+  background: url("images/device-border-iphone5-960.png") no-repeat scroll center top transparent;
   overflow: hidden;
   padding: 116px calc(50% - 115px) 100px calc(50% - 115px);
   padding: 116px -webkit-calc(50% - 115px) 100px -webkit-calc(50% - 115px);
@@ -423,7 +423,7 @@ footer p {
   }
 
   .border-macbook {
-    background: url("/wp-content/themes/my-theme/images/device-border-macbook-740.png") no-repeat scroll center top transparent;
+    background: url("images/device-border-macbook-740.png") no-repeat scroll center top transparent;
     overflow: hidden;
     padding: 44px calc(50% - 261px) 65px calc(50% - 261px);
     padding: 44px -webkit-calc(50% - 261px) 65px -webkit-calc(50% - 261px);
@@ -432,7 +432,7 @@ footer p {
   }
 
   .border-ipad-mini {
-    background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-740.png") no-repeat scroll center top transparent;
+    background: url("images/device-border-ipad-mini-740.png") no-repeat scroll center top transparent;
     overflow: hidden;
     padding: 90px calc(50% - 206px) 118px calc(50% - 201px);
     padding: 90px -webkit-calc(50% - 206px) 118px -webkit-calc(50% - 201px);
@@ -441,7 +441,7 @@ footer p {
   }
 
   .border-ipad-mini-landscape {
-    background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-landscape-740.png") no-repeat scroll center top transparent;
+    background: url("images/device-border-ipad-mini-landscape-740.png") no-repeat scroll center top transparent;
     overflow: hidden;
     padding: 58px 126px 46px 110px;
     padding: 58px calc(50% - 244px) 46px calc(50% - 260px);
@@ -451,7 +451,7 @@ footer p {
   }
 
   .border-iphone5 {
-    background: url("/wp-content/themes/my-theme/images/device-border-iphone5-740.png") no-repeat scroll center top transparent;
+    background: url("images/device-border-iphone5-740.png") no-repeat scroll center top transparent;
     overflow: hidden;
     padding: 88px calc(50% - 89px) 80px calc(50% - 89px);
     padding: 88px -webkit-calc(50% - 89px) 80px -webkit-calc(50% - 89px);
@@ -492,7 +492,7 @@ footer p {
   }
 
   .border-macbook {
-    background: url("/wp-content/themes/my-theme/images/device-border-macbook-580.png") no-repeat scroll center top transparent;
+    background: url("images/device-border-macbook-580.png") no-repeat scroll center top transparent;
     overflow: hidden;
     padding: 33px calc(50% - 204px) 50px calc(50% - 204px);
     padding: 33px -webkit-calc(50% - 204px) 50px -webkit-calc(50% - 204px);
@@ -501,7 +501,7 @@ footer p {
   }
 
   .border-ipad-mini {
-    background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-580.png") no-repeat scroll center top transparent;
+    background: url("images/device-border-ipad-mini-580.png") no-repeat scroll center top transparent;
     overflow: hidden;
     padding: 71px calc(50% - 163px) 75px calc(50% - 157px);
     padding: 71px -webkit-calc(50% - 163px) 75px -webkit-calc(50% - 157px);
@@ -510,7 +510,7 @@ footer p {
   }
 
   .border-ipad-mini-landscape {
-    background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-landscape-580.png") no-repeat scroll center top transparent;
+    background: url("images/device-border-ipad-mini-landscape-580.png") no-repeat scroll center top transparent;
     overflow: hidden;
     padding: 45px calc(50% - 192px) 36px calc(50% - 204px);
     padding: 45px -webkit-calc(50% - 192px) 36px -webkit-calc(50% - 204px);
@@ -519,7 +519,7 @@ footer p {
   }
 
   .border-iphone5 {
-    background: url("/wp-content/themes/my-theme/images/device-border-iphone5-580.png") no-repeat scroll center top transparent;
+    background: url("images/device-border-iphone5-580.png") no-repeat scroll center top transparent;
     overflow: hidden;
     padding: 70px calc(50% - 70px) 66px calc(50% - 69px);
     padding: 70px -webkit-calc(50% - 70px) 66px -webkit-calc(50% - 69px);
@@ -560,7 +560,7 @@ footer p {
   }
 
   .border-macbook {
-    background: url("/wp-content/themes/my-theme/images/device-border-macbook-320.png") no-repeat scroll center top transparent;
+    background: url("images/device-border-macbook-320.png") no-repeat scroll center top transparent;
     overflow: hidden;
     padding: 18px calc(50% - 112px) 30px calc(50% - 112px);
     padding: 18px -webkit-calc(50% - 112px) 30px -webkit-calc(50% - 112px);
@@ -569,7 +569,7 @@ footer p {
   }
 
   .border-ipad-mini {
-    background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-320.png") no-repeat scroll center top transparent;
+    background: url("images/device-border-ipad-mini-320.png") no-repeat scroll center top transparent;
     overflow: hidden;
     padding: 52px calc(50% - 119px) 60px calc(50% - 117px);
     padding: 52px -webkit-calc(50% - 119px) 60px -webkit-calc(50% - 117px);
@@ -578,7 +578,7 @@ footer p {
   }
 
   .border-ipad-mini-landscape {
-    background: url("/wp-content/themes/my-theme/images/device-border-ipad-mini-landscape-320.png") no-repeat scroll center top transparent;
+    background: url("images/device-border-ipad-mini-landscape-320.png") no-repeat scroll center top transparent;
     overflow: hidden;
     padding: 25px calc(50% - 105px) 21px calc(50% - 112px);
     padding: 25px -webkit-calc(50% - 105px) 21px -webkit-calc(50% - 112px);
