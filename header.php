@@ -40,6 +40,7 @@
 
 	<!-- Google font for blog title and headings -->
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 

@@ -130,3 +130,10 @@ function filter_ptags_on_images($content){
 }
 
 add_filter('the_content', 'filter_ptags_on_images');
+
+/* DC, Added this to fix this issue
+   http://davidwalsh.name/remove-wordpress-admin-bar-css */
+add_action('get_header', 'remove_admin_login_header');
+function remove_admin_login_header() {
+    remove_action('wp_head', '_admin_bar_bump_cb');
+}

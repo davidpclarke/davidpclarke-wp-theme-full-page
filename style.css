@@ -148,22 +148,27 @@ td { vertical-align: top; }
 
 .entry-title {
 	font-family: 'Raleway', cursive;
-	font-size: 30px;
+	font-size: 45px;
 	font-weight: bold;
-	color: #bbb;	
+	/* color: #bbb;	*/
+  color: #bbb;
 	line-height: 1.0em;
 	margin: 0px;
+  /*
 	margin-top: 40px;
 	border-bottom: 5px solid #25AAE1;
+  */
+  padding-top: 30px;
+  text-align: center;
 }
 
 .entry-title a {
-	color: #bbb;
+	color: #fff;
 	text-decoration: none;
 }
 
 .entry-title a:visited {
-	color: #bbb;
+	color: #fff;
 }
 
 .entry-title a:hover {
@@ -381,15 +386,15 @@ footer p {
   box-shadow:  0px 10px 20px #000
 }
 
-.bg-red { background-color: #cc3333; }
-.bg-orange { background-color: #ff6600; }
-.bg-green { background-color: #339933; }
-.bg-dark-blue { background-color: #333399; }
-.bg-purple { background-color: #663366; }
-.bg-blue { background-color: #25AAE1; }
-.bg-yellow { background-color: #ffcc00; }
-.bg-lime { background-color: #99ff00; }
-.bg-aqua { background-color: #00ffcc; }
+.bg-red { background-color: #cc3333; color: #fff; }
+.bg-orange { background-color: #ff6600; color: #fff; }
+.bg-green { background-color: #339933; color: #fff; }
+.bg-dark-blue { background-color: #333399; color: #fff; }
+.bg-purple { background-color: #663366; color: #fff; }
+.bg-blue { background-color: #25AAE1; color: #fff; }
+.bg-yellow { background-color: #ffcc00; color: #fff; }
+.bg-lime { background-color: #99ff00; color: #fff; }
+.bg-aqua { background-color: #00ffcc; color: #fff; }
 
 /* =============================================================================
    Media Queries
