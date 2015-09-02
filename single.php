@@ -11,7 +11,8 @@
         <?php the_post(); ?>
 
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <h1 class="entry-title <?php echo get_post_meta(9, "Hero background", true); ?>"><a href="/">.. </a>/ <?php the_title(); ?></h1>
+                <?php $postid = get_the_ID(); ?>
+                <h1 class="entry-title <?php echo get_post_meta($postid, "Hero background", true); ?>"><a href="/">.. </a>/ <?php the_title(); ?></h1>
 
                 <?php the_content(); ?>
 
