@@ -159,6 +159,7 @@ td { vertical-align: top; }
 	border-bottom: 5px solid #25AAE1;
   */
   padding-top: 30px;
+  padding-bottom: 15px;
   text-align: center;
 }
 
@@ -250,8 +251,11 @@ p {
   margin: 0px;
 }
 
+.entry-utility {
+  padding: 20px;
+}
+
 #nav-below {
-  margin-top: 20px;
   position: relative;
 }
 
@@ -260,6 +264,7 @@ p {
   top: 0;
   left: 0;
   width: 50%;
+  padding: 20px;
 }
 
 .nav-next {
@@ -268,6 +273,7 @@ p {
   right: 0;
   width: 50%;
   text-align: right;
+  padding: 20px;
 }
 
 /* Responsive images */

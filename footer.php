@@ -1,9 +1,11 @@
     </div><!-- #main -->
  
     <div id="footer">
+<!--
     	<footer>
 			<p><small>&copy;David Clarke <?php date_default_timezone_set("Europe/London"); echo date("Y"); ?></small></p>
 		</footer>
+-->
         <div id="colophon">
  
             <div id="site-info">
