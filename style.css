@@ -154,6 +154,8 @@ td { vertical-align: top; }
   color: #bbb;
 	line-height: 1.0em;
 	margin: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
   /*
 	margin-top: 40px;
 	border-bottom: 5px solid #25AAE1;
@@ -627,6 +629,12 @@ footer p {
     float: right;
     margin: 0px;
     border-bottom: 5px solid #25AAE1;
+  }
+
+  .entry-title {
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 15px;
   }
 }
 
