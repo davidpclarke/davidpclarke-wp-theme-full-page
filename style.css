@@ -343,6 +343,15 @@ footer p {
 }
 
 /* Set device chrome to go around screen grabs as CSS backgrounds */
+.border-browser {
+  background: url("images/device-border-browser-900.png") no-repeat scroll center top transparent;
+  overflow: hidden;
+  padding: 108px calc(50% - 450px) 0px calc(50% - 450px);
+  padding: 108px -webkit-calc(50% - 450px) 40px -webkit-calc(50% - 450px);
+  width: 900px;
+  height: auto;
+}
+
 .border-macbook {
   background: url("images/device-border-macbook-960.png") no-repeat scroll center top transparent;
   overflow: hidden;
@@ -433,6 +442,15 @@ footer p {
   p {
     margin-left: calc(50% - 111px);
     margin-right: calc(50% - 261px);
+  }
+
+  .border-browser {
+    background: url("images/device-border-browser-690.png") no-repeat scroll center top transparent;
+    overflow: hidden;
+    padding: 83px calc(50% - 345px) 0px calc(50% - 345px);
+    padding: 83px -webkit-calc(50% - 345px) 40px -webkit-calc(50% - 345px);
+    width: 690px !important;
+    height: auto !important;
   }
 
   .border-macbook {
